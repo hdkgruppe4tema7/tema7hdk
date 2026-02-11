@@ -1,7 +1,8 @@
 ---
 import "../css/header&footer.css";
+--- 
 
-<html>
+<html lang="da">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -14,23 +15,22 @@ import "../css/header&footer.css";
 	<header>
 		<nav>
 		<ul class="menu">
-		<a href="/">Forside</a>
-		<a href="Rejse">Rejsekalender</a>
-		<a href="Hoejskole">Højskoleophold</a>
-		<a href="Sommer">Sommerhøjskole</a>
-		<a href="Priser">Priser</a>
-		<a href="Om">Om os</a>
-		<a href="Kontakt">Kontakt</a>
-		<a href="Info">Infomøde</a>
+		<li><a href="/Rejse">Rejsekalender</a></li>
+		<li><a href="/Hoejskole">Højskoleophold</a></li>
+		<li><a href="/Sommer">Sommerhøjskole</a></li>
+		<li><a href="/Priser">Priser</a></li>
+		<li><a href="/Om">Om os</a></li>
+		<li><a href="/Kontakt">Kontakt</a></li>
+		<li><a href="/Info">Infomøde</a></li>
 		</ul>
 		<button class="burger">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-		  </button>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+		</button>
 		</nav>
 		</header>
     <slot/>
-		<footer>Her er min footer</footer>
+		<footer></footer>
 	</body>
 </html>
