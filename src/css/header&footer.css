@@ -1,5 +1,8 @@
 /* menu */
-
+.logo img {
+  width: 100px;
+  height: 50px;
+}
 .menu {
   display: none;
 }
@@ -64,14 +67,14 @@ header {
 .menu a {
   display: block;
   padding: 10px;
-  color: var(--color-text-header-footer);
   text-decoration: none;
   transition: color 0.3s;
+  color: black;
   text-align: end;
 }
 
 .menu a:hover {
-  color: var(--color-text-headline);
+  color: #ce5501;
 }
 
 .burger {
