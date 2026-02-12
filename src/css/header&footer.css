@@ -1,7 +1,7 @@
 /* menu */
 .logo img {
-  width: 100px;
-  height: 50px;
+  width: 50px;
+  height: 30px;
 }
 .menu {
   display: none;
@@ -50,7 +50,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 5px;
   background-color: rgb(255, 255, 255);
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   z-index: 10;
