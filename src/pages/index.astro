@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import "../css/main.css";
 import "../css/header&footer.css";
 import Button from "../components/Buttons.astro";
+import Card from "../components/Card.astro";
 
 ---
 
@@ -19,7 +20,16 @@ import Button from "../components/Buttons.astro";
 	<div>
 	<h2>Vælg dit eventyr</h2>
 	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores alias non architecto quo rem numquam dolorem aliquid hic? Accusamus vel similique dignissimos porro iste omnis asperiores doloribus ab illum quod.</p>
-
+<Card
+headline="Maldiverne"
+subline="Se afgange"
+image="images/maldiverne.jpeg"
+/>
+<Card
+headline=""
+subline="Se afgange"
+image="images/maldiverne.jpeg"
+/>
 </div>
 
 <Button text="Se alle rejser" variant="orange"/>

@@ -2,7 +2,7 @@
 const { headline, subline, byline, image } = Astro.props;
 ---
 
-<article style=`background-image: url(${image});`>
+<article class="Card" style=`background-image: url(${image});`>
     <h2>{headline}</h2>
     <h3>{subline}</h3>
     <p>{byline}</p>
