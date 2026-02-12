@@ -1,3 +1,28 @@
 ---
 const {title, subtitle, color, bgcolor, height ="70vh"} = Astro.props;
 ---
+
+<article>
+  <h2>{title}</h2>
+  <h3>{subtitle}</h3>
+</article>
+
+<style>
+  article {
+    height: calc(100vh - 12rem);
+    padding-top: 4rem;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    background-image: url("images/hero.jpg");
+    background-size: cover;
+  }
+  h2 {
+    font-size: 4rem;
+    width: 60%;
+    margin: auto;
+    line-height: 4rem;
+    margin-bottom: 1rem;
+  }
+</style>

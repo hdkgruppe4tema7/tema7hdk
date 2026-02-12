@@ -4,36 +4,67 @@ import "../css/main.css";
 import "../css/header&footer.css";
 import Button from "../components/Buttons.astro";
 import Card from "../components/Card.astro";
+import Hero from "../components/Hero.astro";
 
 ---
 
 <Layout>
-
-
-	<div class="herobtn">
+  <Hero
+    title="Dit højskoleeventyr starter her"
+    subtitle="Eventyrlige højskoleophold i udlandet for unge."
+    bgimage="hero.jpg"
+	
+  />
+  <div class="herobtn">
 	<Button text="Se rejsekalender" variant="orange" />
 	 <Button text="Infomøder" variant="white"/>
 	 </div>
+	
 </div>
 </section>
 <section class="forside">
 	<div>
 	<h2>Vælg dit eventyr</h2>
 	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores alias non architecto quo rem numquam dolorem aliquid hic? Accusamus vel similique dignissimos porro iste omnis asperiores doloribus ab illum quod.</p>
+	</div>
+
+<div class="cardsgrid">
 <Card
 headline="Maldiverne"
 subline="Se afgange"
 image="images/maldiverne.jpeg"
+span="2"
 />
 <Card
-headline=""
+headline="Brasilien"
 subline="Se afgange"
-image="images/maldiverne.jpeg"
+image="images/brasilien.jpg"
+span="2"
+/>
+<Card
+headline="Australien"
+subline="Se afgange"
+image="images/australien.jpeg"
+span="2"
+/>
+<Card
+headline="Hawaii"
+subline="Se afgange"
+image="images/hawaii.jpeg"
+span="3"
+/>
+<Card
+headline="Sri Lanka"
+subline="Se afgange"
+image="images/srilanka.jpeg"
+span="3"
 />
 </div>
 
+
 <Button text="Se alle rejser" variant="orange"/>
 </section>
+
 <section class="blaasektion">
 	<h2>Oplevelser for livet og fantastiske eventyr</h2>
 	<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque quibusdam itaque, odio repellat, sequi voluptates nemo accusantium soluta, eligendi ullam incidunt esse nisi magnam enim obcaecati iure! Inventore, dolor pariatur?</p>
@@ -41,8 +72,27 @@ image="images/maldiverne.jpeg"
 	</Layout>
 
 
-
 <style>
+.herobtn{
+display: flex;
+flex-direction: row;
+text-align: center;
+align-items: center;
+justify-content: center;
+
+}
+.cardsgrid{
+    display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	gap: 1rem;
+}
+
+
+
+.forside{
+	text-align: center;
+}
+
 	.blaasektion {
   background-color: #d5e7ee;
   display: flex;
