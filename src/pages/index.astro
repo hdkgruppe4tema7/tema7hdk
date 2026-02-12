@@ -7,14 +7,9 @@ import Button from "../components/Buttons.astro";
 ---
 
 <Layout>
-<section class="hero">
-	<div class="heroimg">
-		<img src="/images/hero.jpg" alt="Billede af unge der sidder og kigger ud på udsigten">
-	</div>
-	<div class="herotekst">
-	<h1>Dit højskoleeventyr starter her!</h1>
-	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur fugit harum eligendi eveniet enim sequi architecto totam qui quaerat laudantium distinctio odit, exercitationem veniam. At inventore modi dolorum totam voluptate?</p>
-<div class="herobtn">
+
+
+	<div class="herobtn">
 	<Button text="Se rejsekalender" variant="orange" />
 	 <Button text="Infomøder" variant="white"/>
 	 </div>
@@ -24,6 +19,7 @@ import Button from "../components/Buttons.astro";
 	<div>
 	<h2>Vælg dit eventyr</h2>
 	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores alias non architecto quo rem numquam dolorem aliquid hic? Accusamus vel similique dignissimos porro iste omnis asperiores doloribus ab illum quod.</p>
+
 </div>
 
 <Button text="Se alle rejser" variant="orange"/>
@@ -36,3 +32,13 @@ import Button from "../components/Buttons.astro";
 
 
 
+<style>
+	.blaasektion {
+  background-color: #d5e7ee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+</style>
