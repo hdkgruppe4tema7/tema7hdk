@@ -1,0 +1,60 @@
+---
+import Layout from "../layouts/Layout.astro";
+import "../css/main.css";
+import "../css/header&footer.css";
+import Button from "../components/Buttons.astro";
+import Card from "../components/Card.astro";
+import Hero from "../components/Hero.astro";
+import Section from "../components/Section.astro";
+
+---
+<Layout>
+   <section id="onlineinfo">
+    <div class="onlineinfotekst">
+    <h2>ONLINE INFOMØDER - HØJSKOLE I UDLANDET</h2>
+    <p>Hvis du drømmer om et fantastisk rejseeventyr med masser af adventure, vilde naturoplevelser, spændende kulturmøder og et stærkt højskole-fællesskab, så hop med på et af vores hyggelige online-infomøder."</p>
+    <h3>Vi præsenterer vores eventyrlige højskole og fortæller en masse om:</h3>
+    <ul>
+    <li>Hvem er HÖJSKOLENDK</li>
+    <li>Vores eventyrlige højskoleophold</li>
+    <li>Adventure, aktiviteter og alle de fede oplevelser der venter</li>
+    <li>En ”almindelig” dag på højskole i udlandet</li>
+    <li>Den levende og aktive måde vi underviser på (glem kedelige klasseværelser)</li>
+    <li>Økonomi, lommepenge, pakkeliste, friuger, afrejsemødet, etc.</li>
+    <li>Vi runder af med "Rejsefeber Café", hvor du kan sludre med tidligere elever, rejseledere og ejerne – og selvfølgelig gi´ den gas med alle de spørgsmål du har. Vi glæder os til at se dig!</li>
+</ul>
+</div>
+<div class="infobilleder">
+    <img src="/images/australien.jpeg" alt="" width="504" height="672">
+</div>
+</section>
+</Layout>
+
+<style>
+     #onlineinfo{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 11rem;
+     }
+    #onlineinfo{
+        background-color: #F8E6D9;
+        padding-top: 4rem;
+        padding-bottom: 7rem;
+    }
+        #onlineinfo h2{
+    font-size: 2.5rem;
+  }
+  #onlineinfo h3{
+    font-weight: bold;
+  }
+
+  .onlineinfotekst{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10rem;
+  }
+  .onlineinfotekst p, li{
+    max-width: 900px;
+  }
+
+</style>
