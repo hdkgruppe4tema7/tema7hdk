@@ -1,8 +1,8 @@
 ---
-const { headline, subline, byline, image, span } = Astro.props;
+const { subline, byline, color, image, span} = Astro.props;
 ---
 
-<article style=`background-image: url(${image}); grid-column: span ${span};`>
+<article style=`background-image: url(${image}); grid-column: span ${span} ; color: ${color} `>
     <h3>{subline}</h3>
     <p>{byline}</p>
 </article>
@@ -11,7 +11,17 @@ const { headline, subline, byline, image, span } = Astro.props;
 article{
  background-size: cover;
  aspect-ratio: 2/1;
+ color: white;
+ padding-left: 2rem;
+ border-radius: 15px;
+ box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
 
+}
+article:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
 }
 
 </style>

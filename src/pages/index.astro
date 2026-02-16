@@ -5,71 +5,84 @@ import "../css/header&footer.css";
 import Button from "../components/Buttons.astro";
 import Card from "../components/Card.astro";
 import Hero from "../components/Hero.astro";
+import Section from "../components/Section.astro";
 
 ---
 
 <Layout>
   <Hero
     title="Dit højskoleeventyr starter her"
-    subtitle="Eventyrlige højskoleophold i udlandet for unge."
+    subtitle="HØJSKOLENDK er en dansk højskole for unge i alderen 18-26 år. Vi brænder for oplevelser, fællesskabet og det gode eventyr."
     bgimage="hero.jpg"
-	
   />
   <div class="herobtn">
 	<Button text="Se rejsekalender" variant="orange" />
 	 <Button text="Infomøder" variant="white"/>
 	 </div>
-	
-</div>
-</section>
-<section class="forside">
-	<div>
-	<h2>Vælg dit eventyr</h2>
-	<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores alias non architecto quo rem numquam dolorem aliquid hic? Accusamus vel similique dignissimos porro iste omnis asperiores doloribus ab illum quod.</p>
-	</div>
+
+<Section id="forside"
+title="Vælg dit eventyr" subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia ipsa tempora ut voluptatum"/>
 
 <div class="cardsgrid">
 <Card
-headline="Maldiverne"
-subline="Se afgange"
+subline="Maldiverne"
+byline="Se afgange"
 image="images/maldiverne.jpeg"
 span="2"
 />
+
 <Card
-headline="Brasilien"
-subline="Se afgange"
+subline="Brasilien"
+byline="Se afgange"
 image="images/brasilien.jpg"
 span="2"
 />
+
 <Card
-headline="Australien"
-subline="Se afgange"
+subline="Australien"
+byline="Se afgange"
 image="images/australien.jpeg"
 span="2"
 />
+
 <Card
-headline="Hawaii"
-subline="Se afgange"
+subline="Hawaii"
+byline="Se afgange"
 image="images/hawaii.jpeg"
 span="3"
 />
+
 <Card
-headline="Sri Lanka"
-subline="Se afgange"
+subline="Sri Lanka"
+byline="Se afgange"
 image="images/srilanka.jpeg"
 span="3"
 />
 </div>
-
-
 <Button text="Se alle rejser" variant="orange"/>
-</section>
 
-<section class="blaasektion">
-	<h2>Oplevelser for livet og fantastiske eventyr</h2>
-	<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque quibusdam itaque, odio repellat, sequi voluptates nemo accusantium soluta, eligendi ullam incidunt esse nisi magnam enim obcaecati iure! Inventore, dolor pariatur?</p>
-</section>
-	</Layout>
+
+
+
+<Section title="Oplevelser for livet og fantastiske eventyr" subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia ipsa tempora ut voluptatum" bgcolor="#D5E7EE"/>
+
+<Section title="+3.000 glade elever siden 2010" subtitle="96% af alle elever anbefaler HØJSKOLENDK (2025)"/>
+
+<Section title="Klar på højskoleeventyr, fællesskab & masser af adventure?" subtitle="Her er lidt af det, som du får, når du tager på et højskoleophold med os" bgcolor="#F8E6D9"/>
+
+<Section title="Kom til infomøde" subtitle="Kig forbi et af vores hyggelige online-infomøder - vi glæder os til at møde dig"
+	
+/>
+<Button text="Tilmeld infomøde" variant="orange" />
+
+<Section title="Historier fra elever" subtitle="HØJSKOLENDK er en dansk højskole for unge i alederen 18-29 år. Vi brænder for oplevelser, fællesskabet og det gode eventyr." bgcolor="#D5E7EE"
+/>
+<Button text="Læs flere historier" variant="orange" />
+
+<Section title="Et fællesskab, der starter på rejsen og varer hele livet"
+/>
+
+</Layout>
 
 
 <style>
@@ -79,26 +92,21 @@ flex-direction: row;
 text-align: center;
 align-items: center;
 justify-content: center;
+padding-top: 1rem;
 
 }
+
 .cardsgrid{
     display: grid;
 	grid-template-columns: repeat(6, 1fr);
 	gap: 1rem;
+	margin: 5rem;
 }
-
 
 
 .forside{
 	text-align: center;
+	max-width: 1200px;
 }
 
-	.blaasektion {
-  background-color: #d5e7ee;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
 </style>
