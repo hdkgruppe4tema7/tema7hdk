@@ -24,22 +24,148 @@ import Section from "../components/Section.astro";
     <li>Vi runder af med "Rejsefeber Café", hvor du kan sludre med tidligere elever, rejseledere og ejerne – og selvfølgelig gi´ den gas med alle de spørgsmål du har. Vi glæder os til at se dig!</li>
 </ul>
 </div>
-<div class="infobilleder">
+<div class="carousel">
+    <div class="track">
     <img src="/images/australien.jpeg" alt="" width="504" height="672">
+    <img src="/images/brasilien.jpg" alt="" width="504" height="672">
+    <img src="/images/srilanka.jpeg" alt="" width="504" height="672">
+    <img src="/images/maldiverne.jpeg" alt="" width="504" height="672">
+    <img src="/images/hawaii.jpeg" alt="" width="504" height="672">
+    </div>
+</div>
+<div class="scroll-hint">
+  ↓
 </div>
 </section>
+
+<section class="form">
+<section class="formsection">
+<h2>Tilmeld dig her</h2>
+<form id="webform">
+          <div class="form-group">
+            <label for="Fornavn">Fornavn</label>
+            <input type="text" id="Fornavn" name="Fornavn" required />
+            <p class="error-message" id="error">Udfyld</p>
+          </div>
+          <div class="form-group">
+            <label for="Efternavn">Efternavn </label>
+            <input type="text" id="Efternavn" name="Efternavn" required />
+            <p class="error-message" id="error">Udfyld</p>
+          </div>
+          <div class="form-group">
+            <label for="Phone">Telefonnummer</label>
+            <input type="tel" id="Phone" name="Phone" required />
+            <p class="error-message" id="password-error">Udfyld</p>
+          </div>
+          <div class="form-group">
+            <label for="Email">Email</label>
+            <input type="email" id="Email" name="Email" required />
+            <p class="error-message" id="error">Udfyld</p>
+          </div>
+          <fieldset>
+            <legend>Interesseret i sommerhøjskole?</legend>
+            <div class="fieldset-group">
+              <label>
+                <input type="checkbox" name="Destiantion" value="BaliLombokGili"  />
+                Bali, Lombok og Gili
+              </label>
+            </div>
+            <div class="fieldset-group">
+              <label>
+                <input type="checkbox" name="Destiantion" value="SydkoreaJapan"  />
+                Sydkorea & Japan
+              </label>
+            </div>
+            <div class="fieldset-group">
+              <label>
+                <input type="checkbox" name="Destiantion" value="Japan " />
+                Japan 
+              </label>
+            
+            </div>
+              <div class="fieldset-group">
+              <label>
+                <input type="checkbox" name="Destiantion" value="BrasilienEquadorAmazonas " />
+               Brasilien, Equador & Amazonas
+              </label>  
+            </div>
+              <div class="fieldset-group">
+              <label>
+                <input type="checkbox" name="Destiantion" value="BrasilienArgentinaPeruEcuadorGalapagos"  />
+                Brasilien, Argentina, Peru, Ecuador & Galapagos
+              </label>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Interesseret i almen højskole?</legend>
+           <div class="fieldset-group">
+              <label>
+                <input type="checkbox" name="Destiantion" value="BrasilienArgentinaPeruEcuadorGalapagos"  />
+                Brasilien, Argentina, Peru, Ecuador & Galapagos
+              </label>
+            </div>
+
+          </fieldset>
+          <button class="submit-button" type="submit">Indsend</button>
+        </form>
+</section>
+
+
+<section class="formsummary"></section>
+
+</section>
+
 </Layout>
 
 <style>
-     #onlineinfo{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 11rem;
-     }
-    #onlineinfo{
+
+.scroll-hint {
+color: rgb(255, 115, 0);
+padding-left: 100%;
+  font-size: 6rem;
+  display: inline-block;
+  animation: bounceY 1s ease-in-out infinite;
+}
+
+@keyframes bounceY {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+.carousel {
+max-width: 650px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.track {
+  display: flex;
+}
+
+.track img {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  width: 100%;
+  height: 60vh;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+ #onlineinfo{
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 5rem;
+ }
+
+ #onlineinfo{
         background-color: #F8E6D9;
         padding-top: 4rem;
-        padding-bottom: 7rem;
+        padding-bottom: 3rem;
     }
         #onlineinfo h2{
     font-size: 2.5rem;
