@@ -2,10 +2,16 @@
 const {title, subtitle, color, bgcolor, height ="70vh"} = Astro.props;
 ---
 
-<article>
-  <h2>{title}</h2>
-  <h3>{subtitle}</h3>
+<article class="hero">
+  <div class="hero-content">
+    <h2>{title}</h2>
+    <h3>{subtitle}</h3>
+    <div class="hero-buttons">
+      <slot />
+    </div>
+  </div>
 </article>
+
 
 <style>
   article {
