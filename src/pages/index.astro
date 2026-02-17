@@ -72,25 +72,15 @@ span="3"
 subtitle="Tjek vores instagram for at se, hvad du kan oppleve på et højskoleophold med os"
   bgcolor="#D5E7EE"
 >
+<div class="video-links">
+  <a href="https://youtube.com/shorts/5HFGs8ja_sg" target="_blank">
+    <img src="/public/images/tiktok2.png" alt="Video 1">
+  </a>
 
- <div class="shorts-wrapper">
-  <div class="short">
-    <iframe
-      src="https://www.youtube.com/embed/5HFGs8ja_sg"
-      allowfullscreen>
-    </iframe>
-  </div>
-
-  <div class="short">
-    <iframe
-      src="https://www.youtube.com/embed/vehM3Re-Isg"
-      allowfullscreen>
-    </iframe>
-  </div>
+  <a href="https://youtube.com/shorts/vehM3Re-Isg" target="_blank">
+    <img src="/public/images/tiktok1.png" alt="Video 2">
+  </a>
 </div>
-
-
-
   <div class ="knapindex">
 <div class="knapindex">
   <a href="https://www.instagram.com/hojskolendk" target="_blank">
@@ -156,24 +146,24 @@ padding-top: 1rem;
   margin: 3rem 0;
 }
 
-.shorts-wrapper {
+.video-links {
   display: flex;
   justify-content: center;
   gap: 2rem;
   margin: 4rem auto;
 }
 
-.short {
+.video-links img {
   width: 280px;
-  aspect-ratio: 9 / 16;
+  border-radius: 14px;
+  transition: transform 0.2s ease;
+  cursor: pointer;
 }
 
-.short iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-  border-radius: 14px;
+.video-links img:hover {
+  transform: scale(1.05);
 }
+
 
 
 </style>
