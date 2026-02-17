@@ -13,7 +13,8 @@ import Section from "../components/Section.astro";
 	
  <Hero id="herotext"
   title="Dit højskoleeventyr starter her"
-  subtitle="HØJSKOLENDK er en dansk højskole for unge i alderen 18-26 år. Vi brænder for oplevelser, fællesskabet og det gode eventyr."
+  subtitle="HØJSKOLENDK er en dansk højskole for unge i alderen 18-26 år. 
+  Vi brænder for oplevelser, fællesskabet og det gode eventyr."
   bgimage="hero.jpg"
 >
   <Button text="Se rejsekalender" variant="orange" />
@@ -64,7 +65,32 @@ span="3"
 <Button text="Se alle rejser" variant="orange"/>
 </div>
 
-<Section title="Oplevelser for livet og fantastiske eventyr" subtitle="Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia ipsa tempora ut voluptatum" bgcolor="#D5E7EE"/>
+
+
+<Section 
+  title="Oplevelser for livet og fantastiske eventyr"
+subtitle="Tjek vores instagram for at se, hvad du kan oppleve på et højskoleophold med os"
+  bgcolor="#D5E7EE"
+>
+
+  <video controls width="400">
+    <source src="/video/hojskolendk.mp4" type="video/mp4" />
+  </video>
+
+  <video controls width="400">
+    <source src="/video/tiktok1.mp4" type="video/mp4" />
+  </video>
+
+  <div class ="knapindex">
+<div class="knapindex">
+  <a href="https://www.instagram.com/hojskolendk" target="_blank">
+    <Button text="Tjek vores Instagram" variant="orange" />
+  </a>
+</div>
+</div>
+</Section>
+
+
 
 <Section title="+3.000 glade elever siden 2010" subtitle="96% af alle elever anbefaler HØJSKOLENDK (2025)"/>
 
