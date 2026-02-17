@@ -73,13 +73,23 @@ subtitle="Tjek vores instagram for at se, hvad du kan oppleve på et højskoleop
   bgcolor="#D5E7EE"
 >
 
-  <video controls width="400">
-    <source src="/video/hojskolendk.mp4" type="video/mp4" />
-  </video>
+ <div class="shorts-wrapper">
+  <div class="short">
+    <iframe
+      src="https://www.youtube.com/embed/5HFGs8ja_sg"
+      allowfullscreen>
+    </iframe>
+  </div>
 
-  <video controls width="400">
-    <source src="/video/tiktok1.mp4" type="video/mp4" />
-  </video>
+  <div class="short">
+    <iframe
+      src="https://www.youtube.com/embed/vehM3Re-Isg"
+      allowfullscreen>
+    </iframe>
+  </div>
+</div>
+
+
 
   <div class ="knapindex">
 <div class="knapindex">
@@ -144,6 +154,25 @@ padding-top: 1rem;
   display: flex;
   justify-content: center;
   margin: 3rem 0;
+}
+
+.shorts-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 4rem auto;
+}
+
+.short {
+  width: 280px;
+  aspect-ratio: 9 / 16;
+}
+
+.short iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 14px;
 }
 
 
