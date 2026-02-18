@@ -39,11 +39,10 @@ import Section from "../components/Section.astro";
 </section>
 
 <section class="form">
-<section class="formsection">
-<h2 class="formh2">Tilmeld dig her</h2>
-<form id="webform">
-  
-   <legend>Hvilket infomøde ønsker du at deltage i?</legend>
+  <section class="formsection">
+    <h2 class="formh2">Tilmeld dig her</h2>
+    <form id="webform">
+      <legend>Hvilket infomøde ønsker du at deltage i?</legend>
             <div class="fieldset-group">
               <label>
                 <input type="radio" name="moede" value="jan6" required />
@@ -215,6 +214,10 @@ import Section from "../components/Section.astro";
 
 <style>
   /* Styling af formular */
+.form{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 #form-summary{
   background-color: #F2EFEF;
 }
