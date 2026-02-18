@@ -203,9 +203,6 @@ import Section from "../components/Section.astro";
 </section>
   <section id="form-summary">
         <h2>Opsummering</h2>
-        <!-- <article>
-          <p class="placeholder">Opsummering</p>
-        </article> -->
         <div class="opsummering">
           <p>Fornavn: <span class="first_name_output"></span></p>
           <p>Efternavn: <span class="last_name_output"></span></p>
@@ -221,9 +218,7 @@ import Section from "../components/Section.astro";
 
 <style>
 
-/* =========================
-   FORM LAYOUT
-========================= */
+
 
 .form{
   display: grid;
@@ -251,16 +246,13 @@ import Section from "../components/Section.astro";
 
 
 
-/* Telefon + Email side-by-side */
 .contact-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.2rem;
 }
 
-/* =========================
-   FORM SUMMARY
-========================= */
+
 
 #form-summary{
   background-color: #F2EFEF;
@@ -269,9 +261,6 @@ import Section from "../components/Section.astro";
   border-radius: 25px;
 }
 
-/* =========================
-   FORM ELEMENTS
-========================= */
 
 .form-group {
   display: flex;
@@ -283,19 +272,19 @@ import Section from "../components/Section.astro";
   font-weight: 500;
 }
 
-/* Required star */
+
 .form-group:has(:required) label::after {
   content: " *";
   color: rgb(207, 22, 22);
 }
 
-/* Invalid styling */
+
 .form-group:has(:user-invalid) input {
   outline: 2px solid #f005;
   border-color: darkred;
 }
 
-/* Inputs */
+
 input[type="text"],
 input[type="tel"],
 input[type="email"] {
@@ -311,7 +300,7 @@ input:focus {
   outline: none;
 }
 
-/* Radio + Checkbox */
+
 .fieldset-group {
   margin-bottom: 0.4rem;
 }
@@ -328,9 +317,7 @@ input[type="checkbox"] {
   accent-color: #d68227;
 }
 
-/* =========================
-   FIELDSET
-========================= */
+
 
 fieldset {
   border: none;
@@ -342,9 +329,7 @@ legend {
   margin-bottom: 6px;
 }
 
-/* =========================
-   SUBMIT BUTTON
-========================= */
+
 
 .submit-button {
   border-radius: 8px;
@@ -355,7 +340,7 @@ legend {
   font-weight: 600;
   color: white;
   transition: 0.3s;
-  grid-column: 1 / -1; /* Går over begge kolonner */
+  grid-column: 1 / -1; 
 }
 
 .submit-button:hover {
@@ -364,9 +349,7 @@ legend {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* =========================
-   ONLINE INFO SECTION
-========================= */
+
 
 #onlineinfo{
   display: grid;
@@ -395,9 +378,6 @@ legend {
   max-width: 900px;
 }
 
-/* =========================
-   CAROUSEL
-========================= */
 
 .carousel {
   max-width: 650px;
@@ -419,9 +399,7 @@ legend {
   border-radius: 15px;
 }
 
-/* =========================
-   SCROLL ICON
-========================= */
+
 
 .scroll-hint {
   color: rgb(255, 115, 0);
@@ -435,10 +413,6 @@ legend {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(10px); }
 }
-
-/* =========================
-   RESPONSIVE
-========================= */
 
 @media (max-width: 900px) {
 
